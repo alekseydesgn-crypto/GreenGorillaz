@@ -4,9 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>GREEN GORILLAZ — фитнес-клубы Кемерово</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800;900&family=Chakra+Petch:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,7 +16,7 @@
 <header class="nav">
   <div class="nav-inner">
     <a href="#top" class="logo" aria-label="Green Gorillaz">
-      <span class="mark">GG</span>
+      <img class="mark" src="assets/logo.png" alt="GG" />
       <span>GREEN GORILLAZ</span>
     </a>
     <nav class="nav-links">
@@ -24,14 +26,13 @@
       <a href="#contact">Клубы</a>
     </nav>
     <div class="nav-cta">
-      <a href="tel:+79029847942" class="nav-phone">+7 (902) 984-79-42</a>
       <a href="#pricing" class="btn">Выбрать абонемент</a>
     </div>
   </div>
 </header>
 
 <section id="top" class="hero">
-  <div class="hero-gg" aria-hidden="true">GG</div>
+  <img class="hero-gorilla" src="assets/gorilla.png" alt="" aria-hidden="true" />
   <div class="wrap hero-grid">
     <div>
       <div class="hero-eyebrow">Сеть фитнес-клубов · Кемерово</div>
@@ -51,7 +52,7 @@
     </div>
     <div class="hero-side">
       <div class="hero-meta">
-        <div><div class="v"><em>5</em></div><div class="l">Клубов в городе</div></div>
+        <div><div class="v">5</div><div class="l">Клубов в городе</div></div>
         <div><div class="v">10</div><div class="l">Лет на рынке</div></div>
         <div><div class="v">12k+</div><div class="l">Активных гостей</div></div>
       </div>
@@ -77,7 +78,6 @@
   <div class="wrap">
     <div class="sec-head">
       <div>
-        <div class="eyebrow">02 · Зоны клуба</div>
         <h2 class="sec-title">Всё, что нужно<br/>для тренировки</h2>
       </div>
       <p class="sec-sub">Пять самостоятельных зон под одной крышей. Заходишь в клуб — и закрываешь все цели: силовые, кардио, единоборства, восстановление и питание.</p>
@@ -85,14 +85,19 @@
     <div class="zones">
 
       <article class="card">
-        <div>
+        <div class="card-head">
           <div class="ic" aria-hidden="true">
-            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5 17.5 17.5"/><rect x="1.5" y="9" width="4" height="6" rx="1"/><rect x="18.5" y="9" width="4" height="6" rx="1"/><rect x="4.5" y="7.5" width="3" height="9" rx="1"/><rect x="16.5" y="7.5" width="3" height="9" rx="1"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="6.5" y1="12" x2="17.5" y2="12"/>
+              <rect x="2" y="9" width="2.5" height="6" rx="0.6"/>
+              <rect x="4.5" y="7" width="2.5" height="10" rx="0.6"/>
+              <rect x="17" y="7" width="2.5" height="10" rx="0.6"/>
+              <rect x="19.5" y="9" width="2.5" height="6" rx="0.6"/>
+            </svg>
           </div>
-          <div class="num">01 / Зал</div>
           <h3>Тренажёрный зал</h3>
-          <p class="desc">Премиум оборудование Precor, отдельный кардио-ряд, свободные веса и зона функционального тренинга.</p>
         </div>
+        <p class="desc">Премиум оборудование Precor, отдельный кардио-ряд, свободные веса и зона функционального тренинга.</p>
         <div class="arrow" aria-hidden="true">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </div>
@@ -100,14 +105,13 @@
       </article>
 
       <article class="card">
-        <div>
+        <div class="card-head">
           <div class="ic" aria-hidden="true">
-            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10c0-3 2-5 5-5h2c3 0 5 2 5 5v2a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4Z"/><path d="M5 12h12"/><path d="M9 16v3h6v-3"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10c0-3 2-5 5-5h2c3 0 5 2 5 5v2a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4Z"/><path d="M5 12h12"/><path d="M9 16v3h6v-3"/></svg>
           </div>
-          <div class="num">02 / Ринг</div>
           <h3>Единоборства</h3>
-          <p class="desc">Тайский бокс с профессиональными тренерами. Индивидуальные и групповые форматы, своя зона с рингом и мешками.</p>
         </div>
+        <p class="desc">Тайский бокс с профессиональными тренерами. Индивидуальные и групповые форматы, своя зона с рингом и мешками.</p>
         <div class="arrow" aria-hidden="true">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </div>
@@ -115,14 +119,13 @@
       </article>
 
       <article class="card">
-        <div>
+        <div class="card-head">
           <div class="ic" aria-hidden="true">
-            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.2"/><path d="M3 19c0-3 2.5-5 6-5s6 2 6 5"/><path d="M15 19c0-2 1.2-3.5 4-3.5s4 1.5 4 3.5"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.2"/><path d="M3 19c0-3 2.5-5 6-5s6 2 6 5"/><path d="M15 19c0-2 1.2-3.5 4-3.5s4 1.5 4 3.5"/></svg>
           </div>
-          <div class="num">03 / Залы групповых</div>
           <h3>Групповые тренировки</h3>
-          <p class="desc">Силовые, функциональные, танцевальные и mind-body направления. Расписание на каждый уровень — от новичка до продвинутого.</p>
         </div>
+        <p class="desc">Силовые, функциональные, танцевальные и mind-body направления. Расписание на каждый уровень — от новичка до продвинутого.</p>
         <div class="arrow" aria-hidden="true">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </div>
@@ -130,14 +133,13 @@
       </article>
 
       <article class="card">
-        <div>
+        <div class="card-head">
           <div class="ic" aria-hidden="true">
-            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h11v6a5 5 0 0 1-5 5H10a5 5 0 0 1-5-5Z"/><path d="M16 9h2a3 3 0 0 1 0 6h-2"/><path d="M8 3v3M11 3v3"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h11v6a5 5 0 0 1-5 5H10a5 5 0 0 1-5-5Z"/><path d="M16 9h2a3 3 0 0 1 0 6h-2"/><path d="M8 3v3M11 3v3"/></svg>
           </div>
-          <div class="num">04 / Фитнес-бар</div>
           <h3>Фитнес-бар</h3>
-          <p class="desc">Правильное питание прямо в клубе: смузи, протеиновые коктейли, боулы и снэки. Можно зайти после тренировки или с собой.</p>
         </div>
+        <p class="desc">Правильное питание прямо в клубе: смузи, протеиновые коктейли, боулы и снэки. Можно зайти после тренировки или с собой.</p>
         <div class="arrow" aria-hidden="true">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </div>
@@ -145,14 +147,13 @@
       </article>
 
       <article class="card">
-        <div>
+        <div class="card-head">
           <div class="ic" aria-hidden="true">
-            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="7" height="18" rx="1.2"/><rect x="13" y="3" width="7" height="18" rx="1.2"/><path d="M7 9v2"/><path d="M16 9v2"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="7" height="18" rx="1.2"/><rect x="13" y="3" width="7" height="18" rx="1.2"/><path d="M7 9v2"/><path d="M16 9v2"/></svg>
           </div>
-          <div class="num">05 / Инфраструктура</div>
           <h3>Раздевалки и гардероб</h3>
-          <p class="desc">Комфортная инфраструктура: просторные раздевалки, душевые с тропическим душем, фен, гардероб и индивидуальные шкафчики.</p>
         </div>
+        <p class="desc">Комфортная инфраструктура: просторные раздевалки, душевые с тропическим душем, фен, гардероб и индивидуальные шкафчики.</p>
         <div class="arrow" aria-hidden="true">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </div>
@@ -167,7 +168,6 @@
   <div class="wrap">
     <div class="sec-head">
       <div>
-        <div class="eyebrow">03 · Абонементы</div>
         <h2 class="sec-title">Простые<br/>тарифы</h2>
       </div>
       <p class="sec-sub">Три плана — без скрытых условий. Любой абонемент работает во всех 5 клубах сети. Можно заморозить, можно поделиться.</p>
@@ -236,7 +236,6 @@
   <div class="wrap">
     <div class="sec-head">
       <div>
-        <div class="eyebrow">04 · Контакты</div>
         <h2 class="sec-title">Оставь заявку<br/>или заходи в гости</h2>
       </div>
       <p class="sec-sub">Перезвоним за 15 минут, расскажем про клуб рядом с тобой и подберём тариф. Заявки принимаем 7 дней в неделю.</p>
@@ -306,6 +305,15 @@
               <a class="val" href="https://t.me/gorillaz142" target="_blank" rel="noopener">@gorillaz142</a>
             </div>
           </div>
+          <div class="contact-item">
+            <div class="ic" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </div>
+            <div>
+              <div class="lbl">Instagram</div>
+              <a class="val" href="https://instagram.com/green_gorillaz" target="_blank" rel="noopener">@green_gorillaz</a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -316,7 +324,7 @@
 <footer>
   <div class="wrap foot-row">
     <div class="logo">
-      <span class="mark">GG</span>
+      <img class="mark" src="assets/logo.png" alt="GG" />
       <span>GREEN GORILLAZ · KEMEROVO</span>
     </div>
     <div>© 2026 Green Gorillaz. Все права защищены.</div>
