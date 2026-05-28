@@ -846,6 +846,18 @@ section { position: relative; }
   padding: 18px 40px;
 }
 
+.fig-martial-tab::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  background: var(--accent);
+  -webkit-mask: radial-gradient(circle at top right, transparent 30px, #000 31px);
+  mask: radial-gradient(circle at top right, transparent 30px, #000 31px);
+}
+
 .fig-martial-tab h3 {
   font-family: "Benzin", "Chakra Petch", sans-serif;
   font-weight: 700;
