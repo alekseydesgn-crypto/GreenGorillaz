@@ -533,301 +533,354 @@ section { position: relative; }
   box-shadow: 0 0 28px rgba(0, 200, 83, 0.55);
 }
 
-/* ============ PRICING ============ */
+/* ============ PRICING (Figma node 1:11) ============ */
 #pricing.section {
-  background:
-    radial-gradient(720px 480px at 50% 18%, rgba(0, 200, 83, 0.14), transparent 72%),
-    #0a0a0a;
+  background: #191919;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 
-.pricing-sec-head { margin-bottom: 56px; }
+/* Title — актуальные / тарифы */
+.fig-title { margin-bottom: 44px; }
 
-.pricing-title {
-  max-width: none;
-  line-height: 0.92;
-  letter-spacing: 0.01em;
-}
-
-.glow-accent {
-  color: var(--accent);
-  text-shadow:
-    0 0 26px rgba(0, 200, 83, 0.65),
-    0 0 60px rgba(0, 200, 83, 0.45),
-    0 0 110px rgba(0, 200, 83, 0.25);
-}
-
-.pricing-wrap {
-  display: grid;
-  grid-template-columns: 1fr 1.05fr 1fr;
-  gap: 20px;
-  align-items: center;
-}
-
-@media (max-width: 920px) {
-  .pricing-wrap { grid-template-columns: 1fr; align-items: stretch; }
-}
-
-.price {
-  position: relative;
-  background: #fbfbf7;
-  border-radius: 22px;
-  padding: 30px 26px;
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-  color: #0f0f0f;
-  transition: transform 0.25s ease;
-}
-
-.price:hover { transform: translateY(-4px); }
-
-.price .name {
-  font-family: var(--head);
+.fig-title-1 {
+  font-family: "Unbounded", "Arial Black", sans-serif;
   font-weight: 800;
-  font-size: 26px;
-  letter-spacing: -0.01em;
-  color: #0f0f0f;
-}
-
-.price ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.price li {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  color: #111;
-  font-family: var(--body);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.3;
-}
-
-.price li.off { color: #b9c2b2; }
-
-.price li .check {
-  flex: 0 0 20px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: var(--accent);
+  font-size: clamp(46px, 6.6vw, 86px);
+  line-height: 0.96;
+  letter-spacing: 0.005em;
   color: #fff;
-  display: grid;
-  place-items: center;
+  text-transform: uppercase;
+  margin: 0;
 }
 
-.price li.off .check { background: #d4dccd; color: #fff; }
+.fig-title-2-wrap {
+  position: relative;
+  display: inline-block;
+  margin-top: 2px;
+}
 
-.price-cta {
-  align-self: center;
-  margin-top: auto;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px 30px;
-  border-radius: 999px;
-  font-family: var(--head);
+.fig-title-2 {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  font-family: "Unbounded", "Arial Black", sans-serif;
   font-weight: 800;
-  font-size: 17px;
-  letter-spacing: 0.01em;
-  background: var(--accent);
-  color: #0a1a0e;
-  box-shadow: 0 14px 30px -12px rgba(0, 200, 83, 0.6);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  font-size: clamp(44px, 6.2vw, 80px);
+  line-height: 0.96;
+  letter-spacing: 0.005em;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+.fig-title-2-glow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  font-family: "Unbounded", "Arial Black", sans-serif;
+  font-weight: 800;
+  font-size: clamp(46px, 6.5vw, 84px);
+  line-height: 0.96;
+  color: var(--accent);
+  text-transform: uppercase;
+  white-space: nowrap;
+  filter: blur(40px);
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+/* Cards */
+.fig-cards {
+  display: flex;
+  gap: 25px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.fig-card {
+  flex: 0 1 411px;
+  background: #fff;
+  border-radius: 25px;
+  padding: 20px 25px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.fig-card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.fig-card-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 1;
+  color: #191919;
+}
+
+.fig-list {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  background: rgba(0, 200, 83, 0.1);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fig-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.1;
+  color: #191919;
   white-space: nowrap;
 }
 
-.price-cta:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 18px 40px -12px rgba(0, 200, 83, 0.8);
+.fig-list li.off { color: rgba(25, 25, 25, 0.6); }
+
+.fig-list .ic {
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
 }
 
-.price.rec {
+.fig-list .ic svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.fig-price-btn {
   background: var(--accent);
-  padding: 46px 30px;
-  box-shadow: 0 0 90px rgba(0, 200, 83, 0.45);
-}
-
-.price.rec .name { color: #0a1a0e; }
-.price.rec li { color: #0a1a0e; }
-.price.rec li .check { background: #0a1a0e; color: var(--accent); }
-
-.price.rec .price-cta {
-  background: #131313;
-  color: #fff;
-  box-shadow: 0 14px 30px -12px rgba(0, 0, 0, 0.5);
-}
-
-.price.rec .price-cta:hover { background: #1d1d1d; }
-
-.fee-row {
-  margin-top: 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 28px;
-  align-items: start;
-  color: var(--accent);
-}
-
-.fee-main .fee-lbl,
-.fee-main .fee-val {
-  font-family: var(--head);
+  border-radius: 20px;
+  padding: 10px 40px;
+  font-family: "Chakra Petch", sans-serif;
   font-weight: 700;
-  font-size: clamp(18px, 1.7vw, 21px);
-  letter-spacing: -0.01em;
+  font-size: 27px;
+  line-height: 1.1;
+  color: #191919;
+  white-space: nowrap;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.fee-main .fee-val { margin-top: 6px; }
-
-.fee-note {
-  font-family: var(--body);
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.5;
-  max-width: 34ch;
-  margin-left: auto;
-  text-align: right;
+.fig-price-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px -8px rgba(0, 200, 83, 0.6);
 }
 
-@media (max-width: 720px) {
-  .fee-row { grid-template-columns: 1fr; }
-  .fee-note { margin-left: 0; text-align: left; }
+/* Max card */
+.fig-card.rec {
+  flex: 0 1 461px;
+  background: var(--accent);
+  padding: 22px 28px 45px;
+  gap: 45px;
+  box-shadow: 0 0 140px 8px rgba(0, 200, 83, 0.5);
 }
 
-.rates-block { margin-top: 56px; }
+.fig-card.rec .fig-card-top { gap: 22px; }
+.fig-card.rec .fig-card-name { font-size: 39px; color: #191919; }
 
-.rates-title {
-  font-family: var(--head);
-  font-weight: 800;
-  font-size: clamp(28px, 3.4vw, 42px);
+.fig-card.rec .fig-list {
+  background: transparent;
+  padding: 22px;
+  gap: 11px;
+}
+
+.fig-card.rec .fig-list li { font-size: 22px; color: #191919; }
+
+.fig-card.rec .fig-list .ic {
+  flex-basis: 18px;
+  width: 18px;
+  height: 18px;
+}
+
+.fig-card.rec .fig-price-btn {
+  background: #191919;
   color: var(--accent);
-  letter-spacing: -0.02em;
-  margin: 0 0 20px 0;
+  padding: 11px 45px;
+  font-size: 30px;
 }
 
-.rates-grid {
+/* Entry fee */
+.fig-fee {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 56px;
+  color: var(--accent);
+}
+
+.fig-fee-main {
+  flex: 1 1 0;
+  min-width: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: clamp(22px, 2.3vw, 30px);
+  line-height: 1.18;
+}
+
+.fig-fee-note {
+  width: 402px;
+  max-width: 42%;
+  text-align: right;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: clamp(15px, 1.5vw, 20px);
+  line-height: 1.2;
+}
+
+/* Group classes heading */
+.fig-group { margin-top: 56px; }
+
+.fig-h3 {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-size: clamp(34px, 4.2vw, 56px);
+  line-height: 1;
+  color: var(--accent);
+  margin: 0 0 20px;
+}
+
+/* Rate grids */
+.fig-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  border-radius: 18px;
-  overflow: hidden;
 }
 
-.rates-grid.outline {
-  border: 1.5px solid var(--accent);
-  background: transparent;
+.fig-grid-outline {
+  border: 3px solid var(--accent);
+  border-radius: 32px;
+  padding: 26px 50px;
+  box-shadow: 0 4px 90px 0 rgba(0, 200, 83, 0.3);
 }
 
-.rates-grid.outline .rate {
-  padding: 26px 14px;
-  text-align: center;
-  border-left: 1px solid rgba(0, 200, 83, 0.35);
-}
-
-.rates-grid.outline .rate:first-child { border-left: none; }
-
-.rate .r-lbl {
-  color: #e8e8e8;
-  font-family: var(--body);
-  font-weight: 600;
-  font-size: 15px;
-}
-
-.rate .r-val {
-  color: var(--accent);
-  font-family: var(--head);
-  font-weight: 800;
-  font-size: 23px;
-  margin-top: 6px;
-}
-
-@media (max-width: 720px) {
-  .rates-grid.outline { grid-template-columns: repeat(2, 1fr); }
-  .rates-grid.outline .rate { border-left: 1px solid rgba(0, 200, 83, 0.35); }
-  .rates-grid.outline .rate:nth-child(odd) { border-left: none; }
-  .rates-grid.outline .rate:nth-child(n+3) { border-top: 1px solid rgba(0, 200, 83, 0.35); }
-}
-
-.martial { margin-top: 44px; }
-
-.martial-tab {
-  display: inline-block;
-  position: relative;
-  background: var(--accent);
-  color: #0a1a0e;
-  font-family: var(--head);
-  font-weight: 800;
-  font-size: clamp(26px, 3.2vw, 42px);
-  letter-spacing: -0.02em;
-  padding: 16px 36px 12px 30px;
-  border-radius: 22px 22px 0 0;
-  z-index: 1;
-}
-
-.martial-tab::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: -22px;
-  width: 22px;
-  height: 22px;
-  background: var(--accent);
-  -webkit-mask: radial-gradient(circle at 100% 0, transparent 22px, #000 23px);
-  mask: radial-gradient(circle at 100% 0, transparent 22px, #000 23px);
-}
-
-.martial-card {
-  background: var(--accent);
-  border-radius: 0 28px 28px 28px;
-  padding: 26px;
+.fig-rate {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 30px;
+  border-right: 1px solid #fff;
 }
 
-.age-row {
-  background: var(--bg);
-  border-radius: 18px;
-  padding: 22px;
-}
+.fig-rate:first-child { padding-left: 0; }
+.fig-rate:last-child { padding-right: 0; border-right: none; }
 
-.age-pill {
-  display: inline-block;
-  background: var(--bg-2);
-  color: #fff;
-  font-family: var(--body);
+.fig-rate .rl {
+  font-family: "Chakra Petch", sans-serif;
   font-weight: 600;
-  font-size: 14px;
-  padding: 9px 18px;
-  border-radius: 11px;
+  font-size: clamp(18px, 2vw, 27px);
+  color: #fff;
+}
+
+.fig-rate .rv {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-size: clamp(22px, 2.5vw, 33px);
+  color: var(--accent);
+  letter-spacing: 0.05em;
+}
+
+/* Martial arts (folder-tab block) */
+.fig-martial {
+  position: relative;
+  margin-top: 56px;
+}
+
+.fig-martial-deco {
+  position: absolute;
+  top: -50px;
+  left: 30%;
+  width: 400px;
+  height: 345px;
+  max-width: 32%;
+  z-index: 0;
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.fig-martial-tab {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  background: var(--accent);
+  border-radius: 30px 30px 0 0;
+  padding: 18px 40px;
+}
+
+.fig-martial-tab h3 {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-size: clamp(34px, 4.2vw, 56px);
+  line-height: 1;
+  color: #191919;
+  margin: 0;
+}
+
+.fig-martial-body {
+  position: relative;
+  z-index: 1;
+  background: var(--accent);
+  border-radius: 0 30px 30px 30px;
+  padding: 28px 40px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fig-age-pill {
+  align-self: flex-start;
+  background: #191919;
+  border-radius: 20px;
+  padding: 10px 30px 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: clamp(22px, 2.3vw, 30px);
+  line-height: 1;
+  color: var(--accent);
   margin-bottom: 18px;
 }
 
-.age-row .rates-grid {
-  background: var(--bg-2);
-  border-radius: 14px;
+.fig-grid-dark {
+  background: #191919;
+  border-radius: 30px;
+  padding: 25px 50px;
+  margin-bottom: 28px;
 }
 
-.age-row .rate {
-  padding: 18px 12px;
-  text-align: center;
-  border-left: 1px solid rgba(255, 255, 255, 0.07);
+.fig-grid-dark:last-child { margin-bottom: 0; }
+.fig-grid-dark .fig-rate .rv { font-size: clamp(21px, 2.3vw, 31px); }
+
+/* Responsive */
+@media (max-width: 980px) {
+  .fig-cards { flex-wrap: wrap; }
+  .fig-card,
+  .fig-card.rec { flex: 1 1 280px; }
 }
 
-.age-row .rate:first-child { border-left: none; }
-.age-row .rate .r-lbl { font-size: 14px; }
-.age-row .rate .r-val { font-size: 21px; }
-
-@media (max-width: 720px) {
-  .age-row .rates-grid { grid-template-columns: repeat(2, 1fr); }
-  .age-row .rate { border-left: 1px solid rgba(255, 255, 255, 0.07); }
-  .age-row .rate:nth-child(odd) { border-left: none; }
-  .age-row .rate:nth-child(n+3) { border-top: 1px solid rgba(255, 255, 255, 0.07); }
+@media (max-width: 760px) {
+  .fig-cards { flex-direction: column; align-items: stretch; }
+  .fig-card,
+  .fig-card.rec { flex: 1 1 auto; width: 100%; }
+  .fig-fee { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .fig-fee-note { width: auto; max-width: none; text-align: left; }
+  .fig-grid { grid-template-columns: repeat(2, 1fr); row-gap: 18px; }
+  .fig-grid-outline { padding: 24px; }
+  .fig-grid-dark { padding: 22px; }
+  .fig-rate { padding: 0 0 0 18px; border-right: none; border-left: 1px solid rgba(255, 255, 255, 0.45); }
+  .fig-rate:nth-child(odd) { padding-left: 0; border-left: none; }
+  .fig-martial-deco { display: none; }
 }
 
 /* ============ CONTACT ============ */
