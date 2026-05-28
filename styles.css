@@ -805,14 +805,15 @@ section { position: relative; }
 .fig-rate {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 0 30px;
+  padding: 0 16px;
+  text-align: center;
   border-right: 1px solid #fff;
 }
 
-.fig-rate:first-child { padding-left: 0; }
-.fig-rate:last-child { padding-right: 0; border-right: none; }
+.fig-rate:last-child { border-right: none; }
 
 .fig-rate .rl {
   font-family: "Benzin", "Chakra Petch", sans-serif;
@@ -833,18 +834,6 @@ section { position: relative; }
 .fig-martial {
   position: relative;
   margin-top: 56px;
-}
-
-.fig-martial-deco {
-  position: absolute;
-  top: -50px;
-  left: 30%;
-  width: 400px;
-  height: 345px;
-  max-width: 32%;
-  z-index: 0;
-  opacity: 0.55;
-  pointer-events: none;
 }
 
 .fig-martial-tab {
@@ -914,9 +903,8 @@ section { position: relative; }
   .fig-grid { grid-template-columns: repeat(2, 1fr); row-gap: 18px; }
   .fig-grid-outline { padding: 24px; }
   .fig-grid-dark { padding: 22px; }
-  .fig-rate { padding: 0 0 0 18px; border-right: none; border-left: 1px solid rgba(255, 255, 255, 0.45); }
-  .fig-rate:nth-child(odd) { padding-left: 0; border-left: none; }
-  .fig-martial-deco { display: none; }
+  .fig-rate { padding: 0 8px; border-right: none; border-left: 1px solid rgba(255, 255, 255, 0.45); }
+  .fig-rate:nth-child(odd) { border-left: none; }
 }
 
 /* ============ CONTACT ============ */
