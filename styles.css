@@ -1,3 +1,39 @@
+@font-face {
+  font-family: "Akony";
+  src: url("assets/fonts/AKONY.ttf") format("truetype");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cygre";
+  src: url("assets/fonts/Cygre-ExtraBold-BF63eeebf4aa137.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cygre";
+  src: url("assets/fonts/Cygre-Black-BF63eeebf3942b2.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Benzin";
+  src: url("assets/fonts/Benzin-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Benzin";
+  src: url("assets/fonts/Benzin-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --bg: #191919;
   --bg-2: #1f1f1f;
@@ -544,7 +580,7 @@ section { position: relative; }
 .fig-title { margin-bottom: 44px; }
 
 .fig-title-1 {
-  font-family: "Unbounded", "Arial Black", sans-serif;
+  font-family: "Akony", "Unbounded", "Arial Black", sans-serif;
   font-weight: 800;
   font-size: clamp(46px, 6.6vw, 86px);
   line-height: 0.96;
@@ -564,7 +600,7 @@ section { position: relative; }
   position: relative;
   z-index: 1;
   display: inline-block;
-  font-family: "Unbounded", "Arial Black", sans-serif;
+  font-family: "Akony", "Unbounded", "Arial Black", sans-serif;
   font-weight: 800;
   font-size: clamp(44px, 6.2vw, 80px);
   line-height: 0.96;
@@ -578,7 +614,7 @@ section { position: relative; }
   left: 0;
   top: 0;
   z-index: 0;
-  font-family: "Unbounded", "Arial Black", sans-serif;
+  font-family: "Akony", "Unbounded", "Arial Black", sans-serif;
   font-weight: 800;
   font-size: clamp(46px, 6.5vw, 84px);
   line-height: 0.96;
@@ -617,7 +653,7 @@ section { position: relative; }
 }
 
 .fig-card-name {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cygre", "Montserrat", sans-serif;
   font-weight: 800;
   font-size: 35px;
   line-height: 1;
@@ -639,8 +675,8 @@ section { position: relative; }
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
+  font-family: "Cygre", "Montserrat", sans-serif;
+  font-weight: 900;
   font-size: 20px;
   line-height: 1.1;
   color: #191919;
@@ -666,7 +702,7 @@ section { position: relative; }
   background: var(--accent);
   border-radius: 20px;
   padding: 10px 40px;
-  font-family: "Chakra Petch", sans-serif;
+  font-family: "Benzin", "Chakra Petch", sans-serif;
   font-weight: 700;
   font-size: 27px;
   line-height: 1.1;
@@ -725,7 +761,7 @@ section { position: relative; }
 .fig-fee-main {
   flex: 1 1 0;
   min-width: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cygre", "Montserrat", sans-serif;
   font-weight: 800;
   font-size: clamp(22px, 2.3vw, 30px);
   line-height: 1.18;
@@ -735,7 +771,7 @@ section { position: relative; }
   width: 402px;
   max-width: 42%;
   text-align: right;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cygre", "Montserrat", sans-serif;
   font-weight: 800;
   font-size: clamp(15px, 1.5vw, 20px);
   line-height: 1.2;
@@ -745,7 +781,7 @@ section { position: relative; }
 .fig-group { margin-top: 56px; }
 
 .fig-h3 {
-  font-family: "Chakra Petch", sans-serif;
+  font-family: "Benzin", "Chakra Petch", sans-serif;
   font-weight: 700;
   font-size: clamp(34px, 4.2vw, 56px);
   line-height: 1;
@@ -779,14 +815,14 @@ section { position: relative; }
 .fig-rate:last-child { padding-right: 0; border-right: none; }
 
 .fig-rate .rl {
-  font-family: "Chakra Petch", sans-serif;
+  font-family: "Benzin", "Chakra Petch", sans-serif;
   font-weight: 600;
   font-size: clamp(18px, 2vw, 27px);
   color: #fff;
 }
 
 .fig-rate .rv {
-  font-family: "Chakra Petch", sans-serif;
+  font-family: "Benzin", "Chakra Petch", sans-serif;
   font-weight: 700;
   font-size: clamp(22px, 2.5vw, 33px);
   color: var(--accent);
@@ -821,7 +857,7 @@ section { position: relative; }
 }
 
 .fig-martial-tab h3 {
-  font-family: "Chakra Petch", sans-serif;
+  font-family: "Benzin", "Chakra Petch", sans-serif;
   font-weight: 700;
   font-size: clamp(34px, 4.2vw, 56px);
   line-height: 1;
@@ -844,7 +880,7 @@ section { position: relative; }
   background: #191919;
   border-radius: 20px;
   padding: 10px 30px 14px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cygre", "Montserrat", sans-serif;
   font-weight: 800;
   font-size: clamp(22px, 2.3vw, 30px);
   line-height: 1;
